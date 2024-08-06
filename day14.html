@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Registration </title>
+</head>
+<body>
+    <main>
+        <header style="text-align: center;"><h1>Task-1 (03/08/2024) </h1></header>
+        <form action="./Sample Text File (Task Completed).txt">
+        <h2>Software Developer Job Application Form</h2>
+        <section>
+                <br>
+                <fieldset style="padding: 2%;">
+                    <legend><b>Personal Information</b></legend>
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" name="fullname" id="fullname" required autofocus><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required ><br><br>
+                    <label for="phnum">Phone Number:</label>
+                    <input type="tel" name="Phone number" id="phnum" required >
+                </fieldset>
+                <br><br>
+        </section>
+        <section>
+            <fieldset style="padding: 2%;">
+                <legend><b>Job Details</b></legend>
+                <label for="position">Position applied For:</label>
+                <input autofocus type="text" id="position" placeholder="Software Developer" readonly
+                value="Software Developer"><br><br>
+                <label for="exp">Years Of Experience:</label>
+                <input autofocus type="number" name="exp" id="exp" max="30" required><br><br>
+                <label for="skills">Technical Skills:</label>
+                <input list="skills"  required> 
+                <datalist id="skills" >
+                    <option value="HTML">HTML</option>
+                    <option value="Python">Python</option>
+                    <option value="Java">Java</option>
+                    <option value="Sql">Sql</option>
+                    <option value="Css">Css</option>
+                </datalist><br><br>
+                <label for="location">Preferred Location:</label>
+                <select name="location" id="location" required>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Bengaluru">Bengaluru</option>
+                    <option value="Munbai">Mumbai</option>
+                    <option value="Delhi">Delhi</option>
+                </select>
+                <br><br>
+                <label for="resume">Upload Resume</label>
+                <input type="file" name="resume" id="resume" required>
+            </fieldset>
+        </section>
+        <br>
+        <input type="submit" value="Submit Appilication">
+        </form>
+</body>
+</html>
